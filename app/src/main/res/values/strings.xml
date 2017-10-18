@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">07_VariosActivityConCambioDeEstilo</string>
+    <string name="infoAutor">Aplicacion que abre un mismo activity con distinto style</string>
+</resources>
