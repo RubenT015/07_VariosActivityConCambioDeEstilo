@@ -12,10 +12,11 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        this.setTheme(bundle.getInt("style"));
+        setTheme(bundle.getInt("style"));
+        //setTheme(R.style.Theme1);
         setContentView(R.layout.activity_2);
 
-        //setTheme(R.style.Theme1);
+        //Si se llama a setTheme despues de SetContentView, parece no aplicarse el nuevo style
         //this.setTheme(bundle.getInt("style"));
         tv = (TextView) findViewById(R.id.tv);
         tv.setText(bundle.getString("texto"));
